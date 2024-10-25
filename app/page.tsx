@@ -25,7 +25,7 @@ export default function Home() {
         <div className="container">
           <div className="header_navbar">
             <div className="header_brand">
-              <a className="logo" href="/"><img loading="lazy" alt="site" width="150" height="40" style={{ color: "transparent" }} src="https://etrade-delta.vercel.app/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=256&q=75" />
+              <a className="logo" href="https://themeforest.net/item/etrade-multipurpose-ecommerce-nextjs-template/48473978"><img loading="lazy" alt="site" width="150" height="40" style={{ color: "transparent" }} src="https://etrade-delta.vercel.app/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=256&q=75" />
               </a>
             </div>
             <div className="header_main_menu">
