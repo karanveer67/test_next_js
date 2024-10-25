@@ -1,0 +1,499 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.preveiw-header{
+  font-size: 12px;
+  height: 54px;
+  background-color: #262626;
+  line-height: 54px;
+  margin-bottom: 1px;
+  position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.envato_logo{
+  float: left;
+  padding: 0px 20px;
+}
+
+a.header_envato{
+  display: inline-block;
+  position:absolute;
+  top: 18px;
+  height: 18px;
+  width: 152px;
+  background-image: url(https://public-assets.envato-static.com/assets/logos/envato_market-dd390ae860330996644c1c109912d2bf63885fc075b87215ace9b5b4bdc71cc8.svg);
+  background-size: 152px 18px;
+  text-indent: -100px;
+}
+
+.preveiw_action{
+  float: right;
+}
+
+.preveiw_action_button{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+a.headeer_button{
+  position: relative;
+  box-shadow: 0 2px 0 #6f9a37;
+  background-color: #82b440;
+  font-size: 14px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.header_style{
+  background-color: #f9f3f0;
+  margin-top: -1px;
+}
+
+.header_offer{
+  background-image: url(https://etrade-delta.vercel.app/images/others/campaign-bg2.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8px 0;
+  position: relative;
+
+}
+
+.offer_content{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_para{
+  color: #eeb2ff;
+  font-size: 14px;
+}
+
+.content_anchor{
+  font-size: 700;
+  color: white;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+.mainmenu{
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+.container{
+  padding-left: 115px;
+  padding-right: 115px;
+  position: fixed;
+  /* box-shadow: 0 24px 24px -16px hsla(0, 0%, 6%, .2); */
+}
+
+.header_navbar{
+  background-color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header_brand{
+  box-sizing: border-box;
+}
+
+.logo{
+  display: block;
+}
+
+.header_main_menu{
+  flex: 1 1 ;
+  margin: 0 50px;
+}
+
+.mainmenu_nav{
+  display: block;
+}
+
+.mainmenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: ; */
+}
+
+.mainmenu li a{
+  margin: 8px 24px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.mainmenu li a::before{
+  height: 2px;
+  width: 100%;
+  background-color: #0a0a0a;
+  position: absolute;
+  bottom: 29px;
+  left: 0;
+  opacity: 0;
+  transition: width 0.5s, opacity 0.5s;
+}
+
+.mainmenu li a:hover::before {
+  width: 100%;
+  opacity: 1; 
+}
+
+.header_action{
+  display: flex;
+  align-items: center;
+}
+.header_btn{
+  display: block;
+}
+
+.menu_btn{
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #3577f0;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.banner_wrapper{
+  background-image: url(https://etrade-delta.vercel.app/images/preview/banner-bg.png);
+  margin-top: -110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 140px;
+  position: relative;
+  z-index: 1;
+ 
+}
+
+.banner_area{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 60px;
+  padding-left: calc((100% - 1290px) / 2);
+}
+
+.subtitle{
+  margin-bottom: 10px;
+  color: var(--color-heading);
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+ 
+}
+
+.theme_breif{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: -25px;
+  
+}
+.subtitle_box{
+  padding: 0 30px;
+}
+
+.computerimg{
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+ 
+.label_box{
+  background-color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(37, 47, 63, .1);
+  position: absolute;
+  bottom: 22px;
+  left: 118px;
+  z-index: 1;
+}
+
+.label_box label{
+  margin-right: 20px;
+  font-weight: 500;
+  color: var(--color-heading);
+}
+
+.icon_list{
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: -10px -5px;
+}
+.icon_list li{
+  text-align: center;
+  display: inline-block;
+  margin: 10px 5px;
+  background-color: var(--color-lighter);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+}
+
+
+.icon_img{
+  width: 30px;
+  height: auto;
+}
+
+.cards{
+  height: auto;
+  background-color: #f6f7fb;
+}
+
+.card_container{
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+.demo_area{
+  padding: 60px 0;
+}
+
+.thumb{
+  position: relative;
+    overflow: hidden;
+    box-shadow: 0 24px 24px -16px hsla(0, 0%, 6%, .2);
+    border-radius: 6px;
+ 
+}
+
+.title{
+  font-weight: 500;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cards_img{
+  display: flex;
+  flex-wrap: wrap;
+   gap: 10px;
+   padding-bottom: 40px;
+}
+
+.hover_effect{
+  position: relative; 
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%; 
+  transition: 0.3s; 
+}
+.hover-effect:hover img {
+  filter: brightness(50%);
+}
+
+.button-container {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0; 
+  transition: opacity 0.3s;
+}
+
+
+.hover-effect:hover .button-container {
+  opacity: 1; 
+}
+
+.view-demo-button {
+  padding: 10px 20px;
+  background-color: #ffffff; 
+  color: #000; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s;
+}
+
+.view-demo-button:hover {
+  background-color: #f0f0f0; 
+}
+
+.title:hover{
+  color: #3577f0;
+}
+.title{
+  font-size: 1.25rem;
+}
+
+.inner_header{
+  text-align: center;
+  padding: 40px 0;
+}
+
+.inner_page{
+  padding-left: 115px;
+  padding-right: 115px;
+}
+.service_box{
+  background-color: var(--color-white);
+  border: 1px solid #f1f1f1;
+  padding: 50px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  position: relative;
+  transition: all .3s ease-in-out;
+  width: 32%;
+}
+
+.features_container{
+  padding-left: 115px;
+  padding-right: 115px;
+  border-top: 1px solid #f1f1f1;
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+}
+
+.boxpara{
+  color: #777;
+  font-size: 16px;
+  font-weight: 400;
+}
+.service_box:hover{
+  background-color: rgb(219, 219, 219);
+  cursor: pointer;
+}
+.feat_cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.boxone{
+    background: #8e2de2;
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: white;
+    padding: 30px 80px;
+    width: 100%;
+    margin-right: 20px;
+}
+.boxtwo{
+  background: #fc5c7d;
+  background: linear-gradient(90deg, #6a82fb, #fc5c7d);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: white;
+    padding: 30px 80px;
+    width: 100%;
+}
+
+.container_box{
+  padding-left: 115px;
+  padding-right: 115px;
+  margin-bottom: -95px;}
+
+  .box_container{
+    display: flex;
+    padding: 0 110px;
+  }
+
+  .ready_container{
+    padding-left: 115px;
+    padding-right: 115px;
+    background-color: #f6f7fb;
+  }
+  /* .ready_header{
+    background-color: #f6f7fb;
+  } */
+    
+
+  .ready_header {
+    text-align: center;
+    position: relative;
+    top: 175px;
+  }
+
+  .ready_btn{
+    color: white;
+    padding: 17px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:40px;
+  }
+
+.footer{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 180px;
+}
+
+@media only screen and (max-width: 320px) {
+  
+  .preveiw-header {
+    width: 100%;
+   padding: 0;
+  }
+  .main_body{
+    width: 100%;
+  }
+  
+}
+@media only screen and (max-width: 375px) {
+  
+  .preveiw-header {
+    width: 100%;
+   padding: 0;
+  }
+  .main_body{
+    width: 100%;
+  }
+  
+}
